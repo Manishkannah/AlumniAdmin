@@ -71,7 +71,7 @@ public void reportStep(String msg, String status) throws IOException {
 	public void preCondtition() {
 		
 		driver = new EdgeDriver();
-		driver.get("https://alumni-portal-uat.alumnetworks.com/sign-in");
+		driver.get("https://alumni-portal-uat.alumnetworks.com/sign-up");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
