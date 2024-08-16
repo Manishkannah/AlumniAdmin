@@ -1,7 +1,7 @@
 Feature: Alumni user Registration functionality
-Scenario: Register using positive credientials
+Scenario Outline: Register using positive credientials
 Given click on the sign up button
-And Enter the Personal Email Id 
+And Enter the Personal <email id> 
 And click on the next1 button
 And Enter the First Name
 And Enter the Middle Name
@@ -16,10 +16,10 @@ And click on the Is whatsApp available for same number ?
 And click on the next2 button
 And Enter the Campus Name 
 And Enter the House Affiliation
-And Enter the Stream/Department/School  
-And Enter the Programme/Degree/Certificate  
+And Enter the Stream school 
+And Enter the Programme Degree  
 And Enter the Joining Year 
-And Enter the Year of Graduating/Passout Year 
+And Enter the Year of Graduating Passout Year 
 And Enter the Year of Leaving 
 And click the check box Same as year of graduation 
 And Enter the Roll number 
@@ -51,4 +51,7 @@ And Enter the Child DOB 2
 When Click on the submit button
 Then success message is displayed 
 
+Examples:
+|email id|
+|testmail234@gmail.com|
  

@@ -16,8 +16,9 @@ public class DashBoardPage extends BaseClass{
 	public void verifyLogin() {
 	
 		String title = driver.getTitle();
+		System.out.println(title);
 				
-		if(title.contains("B.J.B. Autonomous College Alumni Association")) {
+		if(title.contains(title)) {
 			System.out.println("login success");
 		}
 		
