@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 import pages.BaseClass;
 
 
-@CucumberOptions(features="src/test/java/features/AlumniRegistration.feature",
+@CucumberOptions(features="src/test/java/features/Login.feature",
 				glue="pages",
 				monochrome= true,
 				publish= true
