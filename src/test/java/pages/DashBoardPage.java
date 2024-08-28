@@ -151,6 +151,20 @@ public class DashBoardPage extends BaseClass{
 		}
 		
 	}
+	
+	@And("click on the contact form")
+	public void ContactForms() throws InterruptedException {
+		WebElement cf = driver.findElement(By.xpath("(//span[@class='material-icons-round'])[5]"));
+		mouse.moveToElement(cf).perform();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[@href='#contactForms']")).click();
+		
+	}
+	@And("click on the manage contact form")
+	public void ManageContactForm() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@id='contactForms']/ul[1]/li[1]/a[1]")).click();
+	}
 
 
 }

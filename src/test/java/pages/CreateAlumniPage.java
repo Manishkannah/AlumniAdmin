@@ -77,7 +77,7 @@ public class CreateAlumniPage extends BaseClass {
 		
 	}
 	
-	@And("enter programme/degree/certificate")
+	@And("enter program")
 	public void EnterProgrammeDgree() throws IOException {
 		
 		try {
