@@ -69,21 +69,21 @@ public void reportStep(String msg, String status) throws IOException {
 	}
 }
 	
-  	@Parameters({"browser"})
+//  	@Parameters({"browser"})
 	@BeforeMethod
-	public void preCondtition(String browser) {
+	public void preCondtition() {
   		
-  		if(browser.equalsIgnoreCase("chrome")) {
-  			driver = new ChromeDriver();
-  		}
-  		else if(browser.equalsIgnoreCase("Edge")) {
-  			driver = new EdgeDriver();
-  		}
-		
-  		else if (browser.equalsIgnoreCase("firefox")) {
-  			driver = new FirefoxDriver();
-  		}
-		
+//  		if(browser.equalsIgnoreCase("chrome")) {
+//  			driver = new ChromeDriver();
+//  		}
+//  		else if(browser.equalsIgnoreCase("Edge")) {
+//  			driver = new EdgeDriver();
+//  		}
+//		
+//  		else if (browser.equalsIgnoreCase("firefox")) {
+//  			driver = new FirefoxDriver();
+//  		}
+		driver = new ChromeDriver();
 		driver.get("https://alumni-portal-uat.alumnetworks.com/sign-in");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
@@ -92,7 +92,7 @@ public void reportStep(String msg, String status) throws IOException {
 	
 	@AfterMethod
 	public void postCondition() {
-		driver.close();
+		//driver.close();
 		
 	}
 	@AfterSuite

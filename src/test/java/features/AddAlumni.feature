@@ -1,5 +1,5 @@
 Feature: Add Alumni functionality of alumni admin portal
-Scenario: Add with positive details
+Scenario: Add with positive details for alumni
 Given enter the valid username
 And enter the valid password
 When click on the sign in button

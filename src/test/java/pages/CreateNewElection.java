@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import config.ConfigurationManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 
@@ -99,9 +100,12 @@ public class CreateNewElection extends BaseClass {
 	
 	@When("click on the create button")
 	public void CreateElection () throws InterruptedException, IOException {
+		//String createElectionButton = ConfigurationManager.readConfig().getCreateElectionButton();
 		try {
 			JavascriptExecutor js2 = (JavascriptExecutor) driver; js2.executeScript("window.scrollBy(0,2000)","Add New Returning officer");
 			Thread.sleep(2000);
+//			String createElectionButton = ConfigurationManager.readConfig().getCreateElectionButton();
+//			driver.findElement(By.linkText(createElectionButton)).click();
 			driver.findElement(By.xpath("//button[text()='Create Election']")).click();
 			reportStep("create election button clicked successfully", "pass");
 		} catch (InterruptedException e) {

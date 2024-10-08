@@ -53,5 +53,5 @@ Then success message is displayed
 
 Examples:
 |email id|
-|testmail234@gmail.com|
+|testmail235@gmail.com|
  

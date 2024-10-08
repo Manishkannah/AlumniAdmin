@@ -115,7 +115,7 @@ public class DashBoardPage extends BaseClass{
 	public void ClickOnTheElectionsManagement() throws IOException {
 		
 		try {
-			driver.findElement(By.xpath("(//li[@class='nav-item ']/a)[24]")).click();
+			driver.findElement(By.xpath("(//a[@href='https://alumni-portal-uat.alumnetworks.com/election-management'])[1]")).click();
 			reportStep("Clicked on the election management", "pass");
 		} catch (Exception e) {
 			reportStep(" Doesn't clicked on the election management", "fail");
@@ -164,6 +164,19 @@ public class DashBoardPage extends BaseClass{
 	public void ManageContactForm() throws InterruptedException {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[@id='contactForms']/ul[1]/li[1]/a[1]")).click();
+	}
+	
+	@And("click on the role master")
+	public void RoleMaster() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[@href='#roleWrapper']")).click();
+		
+	}
+	
+	@And("click on the role management")
+	public void clickRoleManagement() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[@href='https://alumni-portal-uat.alumnetworks.com/roles']")).click();
 	}
 
 
