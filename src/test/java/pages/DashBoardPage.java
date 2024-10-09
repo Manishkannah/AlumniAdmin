@@ -178,6 +178,17 @@ public class DashBoardPage extends BaseClass{
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[@href='https://alumni-portal-uat.alumnetworks.com/roles']")).click();
 	}
+	
+	@And("click on the admins")
+	public void Admins() {
+		
+		driver.findElement(By.xpath("//a[@href='#userWrapper']")).click();		
+	}
 
+	@And("click on the admin management")
+	public void AdminsManagement() {
+		
+		driver.findElement(By.xpath("//a[@href='https://alumni-portal-uat.alumnetworks.com/users-management']")).click();		
+	}
 
 }

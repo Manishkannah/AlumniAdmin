@@ -87,6 +87,7 @@ public void reportStep(String msg, String status) throws IOException {
 		driver.get("https://alumni-portal-uat.alumnetworks.com/sign-in");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		
 	}
 	
 	
