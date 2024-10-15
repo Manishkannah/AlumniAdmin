@@ -2,66 +2,66 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-09T13:53:21 IST" name="Default suite" finished-at="2024-10-09T13:53:50 IST" duration-ms="28997">
+  <suite started-at="2024-10-15T08:54:00 IST" name="Default suite" finished-at="2024-10-15T08:54:28 IST" duration-ms="27607">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@7188af83]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-10-09T13:53:21 IST" name="Default test" finished-at="2024-10-09T13:53:50 IST" duration-ms="28997">
+    <test started-at="2024-10-15T08:54:00 IST" name="Default test" finished-at="2024-10-15T08:54:28 IST" duration-ms="27607">
       <class name="runner.CucumberRunner">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-09T13:53:19 IST" name="startReport" finished-at="2024-10-09T13:53:21 IST" duration-ms="1304" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-15T08:53:59 IST" name="startReport" finished-at="2024-10-15T08:54:00 IST" duration-ms="1481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="setValue()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-09T13:53:21 IST" name="setValue" finished-at="2024-10-09T13:53:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setValue()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-15T08:54:00 IST" name="setValue" finished-at="2024-10-15T08:54:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValue -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-09T13:53:21 IST" name="setUpClass" finished-at="2024-10-09T13:53:22 IST" duration-ms="1008" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-15T08:54:00 IST" name="setUpClass" finished-at="2024-10-15T08:54:01 IST" duration-ms="987" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@48268eec]]>
+                <![CDATA[org.testng.TestRunner@50b93353]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="testDetails()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-09T13:53:22 IST" name="testDetails" finished-at="2024-10-09T13:53:22 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-15T08:54:01 IST" name="testDetails" finished-at="2024-10-15T08:54:01 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method is-config="true" signature="preCondtition()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-09T13:53:22 IST" name="preCondtition" finished-at="2024-10-09T13:53:31 IST" duration-ms="9455" status="PASS">
+        <test-method is-config="true" signature="preCondtition()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-15T08:54:01 IST" name="preCondtition" finished-at="2024-10-15T08:54:11 IST" duration-ms="9583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondtition -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-09T13:53:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-09T13:53:48 IST" duration-ms="16348" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-15T08:54:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-15T08:54:26 IST" duration-ms="14999" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add with positive details for admin"]]>
+                <![CDATA["Add with positive details for chapter"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Add Admin functionality of alumni admin portal"]]>
+                <![CDATA["Add chapter functionality of alumni admin portal"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-09T13:53:48 IST" name="postCondition" finished-at="2024-10-09T13:53:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-15T08:54:26 IST" name="postCondition" finished-at="2024-10-15T08:54:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-09T13:53:48 IST" name="tearDownClass" finished-at="2024-10-09T13:53:50 IST" duration-ms="2110" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-15T08:54:26 IST" name="tearDownClass" finished-at="2024-10-15T08:54:28 IST" duration-ms="1968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="stopReport()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-09T13:53:50 IST" name="stopReport" finished-at="2024-10-09T13:53:51 IST" duration-ms="989" status="PASS">
+        <test-method is-config="true" signature="stopReport()[pri:0, instance:runner.CucumberRunner@7188af83]" started-at="2024-10-15T08:54:28 IST" name="stopReport" finished-at="2024-10-15T08:54:29 IST" duration-ms="873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopReport -->

@@ -190,5 +190,19 @@ public class DashBoardPage extends BaseClass{
 		
 		driver.findElement(By.xpath("//a[@href='https://alumni-portal-uat.alumnetworks.com/users-management']")).click();		
 	}
+	
+	@And("click on the chapters")
+	public void ChapterPage() {
+		
+
+		driver.findElement(By.xpath("//a[@href='#chapterWrapper']")).click();
+		}
+	
+	@And("click on the chapter management")
+	public void ChapterManagement() {
+		WebElement scrollCh = driver.findElement(By.xpath("(//i[@class='material-icons'])[20]"));
+		mouse.moveToElement(scrollCh).perform();
+		driver.findElement(By.xpath("//a[contains(@href,'https://alumni-portal-uat.alumnetworks.com/chapter-management')]")).click();
+		}
 
 }

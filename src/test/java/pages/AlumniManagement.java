@@ -14,10 +14,10 @@ public class AlumniManagement extends BaseClass{
 		
 	}
 	
-	@Then("cverify alumni added")
+	@Then("verify alumni added")
 	public void VerifyAlumniAdded() {
 		
-		
+		System.out.println("success");
 		
 	}
 

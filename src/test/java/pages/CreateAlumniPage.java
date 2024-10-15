@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import io.cucumber.java.en.And;
@@ -37,6 +38,20 @@ public class CreateAlumniPage extends BaseClass {
 		
 	}
 	
+	@And("enter gender")
+	public void EnterGender() throws IOException {
+		try {
+			WebElement selectgender = driver.findElement(By.id("gender"));
+			Select dd = new Select(selectgender);
+			dd.selectByIndex(1);
+			reportStep("Gender entered successfully", "pass");
+		} catch (Exception e) {
+			reportStep("Gender is not entered successfully", "fail");
+			e.printStackTrace();
+		}
+		
+	}
+	
 	@And("enter email id")
 	public void EnterEmailId() throws IOException {
 		
@@ -50,19 +65,6 @@ public class CreateAlumniPage extends BaseClass {
 		
 	}
 	
-	@And("enter gender")
-	public void EnterGender() throws IOException {
-		try {
-			WebElement selectgender = driver.findElement(By.id("gender"));
-			Select dd = new Select(selectgender);
-			dd.deselectByIndex(1);
-			reportStep("Gender entered successfully", "pass");
-		} catch (Exception e) {
-			reportStep("Gender is not entered successfully", "fail");
-			e.printStackTrace();
-		}
-		
-	}
 	
 	@And("enter phone number")
 	public void EnterPhonenumber() throws IOException {
@@ -77,13 +79,27 @@ public class CreateAlumniPage extends BaseClass {
 		
 	}
 	
+	@And("enter alumni department")
+	public void enterDepartment() throws IOException {
+		
+		try {
+			WebElement department = driver.findElement(By.id("school_name"));
+			Select dd = new Select(department);
+			dd.selectByIndex(1);
+			reportStep("department entered successfully", "pass");
+		} catch (Exception e) {
+			reportStep("department is not entered successfully", "Fail");
+			e.printStackTrace();
+		}
+	}
+	
 	@And("enter program")
 	public void EnterProgrammeDgree() throws IOException {
 		
 		try {
 			WebElement selectcourse = driver.findElement(By.id("course_attended"));
 			Select dd = new Select(selectcourse);
-			dd.deselectByIndex(1);
+			dd.selectByIndex(1);
 			reportStep("Program entered successfully", "pass");
 		} catch (Exception e) {
 			reportStep("program is not entered successfully", "fail");
@@ -121,6 +137,9 @@ public class CreateAlumniPage extends BaseClass {
 	public void ClickCreateAlumniButton() throws IOException {
 		
 		try {
+			WebElement scroll = driver.findElement(By.xpath("//button[@type='submit']"));
+			Actions mouse = new Actions(driver);
+			mouse.moveToElement(scroll).perform();
 			driver.findElement(By.xpath("//button[@type='submit']")).click();
 			reportStep("Clicked on the create alumni button", "pass");
 		} catch (Exception e) {

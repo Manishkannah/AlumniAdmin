@@ -12,6 +12,7 @@ And enter last name
 And enter email id
 And enter gender
 And enter phone number
+And enter alumni department
 And enter program
 And enter joining year
 And enter passout year

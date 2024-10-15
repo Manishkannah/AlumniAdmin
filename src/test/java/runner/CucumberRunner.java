@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 import pages.BaseClass;
 
 
-@CucumberOptions(features="src/test/java/features/AddAdmin.feature",
+@CucumberOptions(features="src/test/java/features/Addchapter.feature",
 				glue="pages",
 				monochrome= true,
 				publish= true
@@ -24,4 +24,4 @@ public class CucumberRunner extends BaseClass {
 	
 	
 
-}
+ }
