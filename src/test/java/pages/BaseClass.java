@@ -88,12 +88,13 @@ public void reportStep(String msg, String status) throws IOException {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
+		
 	}
 	
 	
 	@AfterMethod
 	public void postCondition() {
-		//driver.close();
+		driver.quit();
 		
 	}
 	@AfterSuite

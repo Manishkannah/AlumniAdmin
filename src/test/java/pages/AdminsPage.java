@@ -30,6 +30,7 @@ public class AdminsPage extends BaseClass {
 		driver.findElement(By.xpath("//i[text()='delete']")).click();
 		driver.switchTo().alert().accept();
 		System.out.println("Also the created Admin role was deleted successfully");
+		
 	}
 
 }

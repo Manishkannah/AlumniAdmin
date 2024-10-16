@@ -204,5 +204,12 @@ public class DashBoardPage extends BaseClass{
 		mouse.moveToElement(scrollCh).perform();
 		driver.findElement(By.xpath("//a[contains(@href,'https://alumni-portal-uat.alumnetworks.com/chapter-management')]")).click();
 		}
+	
+	@And("click on the home page")
+	public void HomePage() {
+		
+		driver.findElement(By.xpath("//a[@href='https://alumni-portal-uat.alumnetworks.com']")).click();
+		
+	}
 
 }

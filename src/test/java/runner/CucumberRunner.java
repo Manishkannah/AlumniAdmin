@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 import pages.BaseClass;
 
 
-@CucumberOptions(features="src/test/java/features/Addchapter.feature",
+@CucumberOptions(features="src/test/java/features/AddInvestee.feature",
 				glue="pages",
 				monochrome= true,
 				publish= true
