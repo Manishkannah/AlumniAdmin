@@ -8,7 +8,7 @@
           <include name="setUpClass"/>
           <include name="startReport"/>
           <include name="stopReport"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario"/>
           <include name="tearDownClass"/>
           <include name="testDetails"/>
           <include name="setValue"/>

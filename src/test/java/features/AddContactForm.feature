@@ -63,14 +63,13 @@ And enter the input type as agreement
 And enter the input name as agreement
 And enter the input label as agreement
 And click agreement as mandatory
-And enter admin mail id
 And enter the admin mail subject
 And enter the admin mail content 
 And enter the user mail subject
 And enter the user mail content 
 And enter success notification
 And enter the error notification
-When click on the create button
+When click on the submit button to submit
 Then verify the created form
 
 

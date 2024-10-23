@@ -8,7 +8,7 @@ public class ManageContactForm extends BaseClass{
 	
 	@And("click on the add contact form")
 	public static void AddForm() {
-		driver.findElement(By.xpath("//a[@class='btn bg-gradient-dark mb-0 me-4']")).click();
+		driver.findElement(By.xpath("//a[contains(@class,'btn bg-gradient-dark')]")).click();
 	}
 
 }

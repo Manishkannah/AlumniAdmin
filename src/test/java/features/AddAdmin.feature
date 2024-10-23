@@ -14,7 +14,7 @@ And enter the admin role type
 And enter password of admin
 And enter confirm password of admin
 And click on the is alumni check box
-When click on the submit button to add admin
+When click on the submit button to submit
 Then admin added successfully message displayed on the screen
 Examples:
 |admin email|

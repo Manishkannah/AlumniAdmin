@@ -94,7 +94,7 @@ public void reportStep(String msg, String status) throws IOException {
 	
 	@AfterMethod
 	public void postCondition() {
-		driver.quit();
+		//driver.quit();
 		
 	}
 	@AfterSuite

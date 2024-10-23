@@ -153,17 +153,31 @@ public class DashBoardPage extends BaseClass{
 	}
 	
 	@And("click on the contact form")
-	public void ContactForms() throws InterruptedException {
-		WebElement cf = driver.findElement(By.xpath("(//span[@class='material-icons-round'])[5]"));
-		mouse.moveToElement(cf).perform();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[@href='#contactForms']")).click();
+	public void ContactForms() throws InterruptedException, IOException {
+		try {
+			WebElement cf = driver.findElement(By.xpath("(//span[@class='material-icons-round'])[5]"));
+			mouse.moveToElement(cf).perform();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//a[@href='#contactForms']")).click();
+			reportStep("Clicked on the contact form module", "pass");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			reportStep("Clicked on the contact form module is not successful", "fail");
+			e.printStackTrace();
+		}
 		
 	}
 	@And("click on the manage contact form")
-	public void ManageContactForm() throws InterruptedException {
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@id='contactForms']/ul[1]/li[1]/a[1]")).click();
+	public void ManageContactForm() throws InterruptedException, IOException {
+		try {
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//div[@id='contactForms']/ul[1]/li[1]/a[1]")).click();
+			reportStep("Clicked on the manage contact form sub module", "pass");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			reportStep("Clicked on the manage contact form sub module is not successful", "fail");
+			e.printStackTrace();
+		}
 	}
 	
 	@And("click on the role master")
@@ -180,29 +194,55 @@ public class DashBoardPage extends BaseClass{
 	}
 	
 	@And("click on the admins")
-	public void Admins() {
+	public void Admins() throws IOException {
 		
-		driver.findElement(By.xpath("//a[@href='#userWrapper']")).click();		
+		try {
+			driver.findElement(By.xpath("//a[@href='#userWrapper']")).click();
+			reportStep("Clicked on Admins successfully", "pass");
+		} catch (Exception e) {
+			reportStep("Clicked on Admins is not successful", "fail");
+			e.printStackTrace();
+		}		
 	}
 
+
 	@And("click on the admin management")
-	public void AdminsManagement() {
+	public void AdminsManagement() throws IOException {
 		
-		driver.findElement(By.xpath("//a[@href='https://alumni-portal-uat.alumnetworks.com/users-management']")).click();		
+		try {
+			driver.findElement(By.xpath("//a[@href='https://alumni-portal-uat.alumnetworks.com/users-management']")).click();
+			reportStep("Clicked on Admin Management Successfully","pass");
+		} catch (Exception e) {
+			reportStep("Clicked on Admin Management is not successful", "fail");
+			e.printStackTrace();
+		}		
 	}
 	
 	@And("click on the chapters")
-	public void ChapterPage() {
+	public void ChapterPage() throws IOException {
 		
-
-		driver.findElement(By.xpath("//a[@href='#chapterWrapper']")).click();
+		try {
+			driver.findElement(By.xpath("//a[@href='#chapterWrapper']")).click();
+			reportStep("Chapter module is clicked successfully","pass");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			reportStep("Chapter module is not clicked successfully","fail");
+			e.printStackTrace();
+		}
 		}
 	
 	@And("click on the chapter management")
-	public void ChapterManagement() {
-		WebElement scrollCh = driver.findElement(By.xpath("(//i[@class='material-icons'])[20]"));
-		mouse.moveToElement(scrollCh).perform();
-		driver.findElement(By.xpath("//a[contains(@href,'https://alumni-portal-uat.alumnetworks.com/chapter-management')]")).click();
+	public void ChapterManagement() throws IOException {
+		try {
+			WebElement scrollCh = driver.findElement(By.xpath("(//i[@class='material-icons'])[20]"));
+			mouse.moveToElement(scrollCh).perform();
+			driver.findElement(By.xpath("//a[contains(@href,'https://alumni-portal-uat.alumnetworks.com/chapter-management')]")).click();
+			reportStep("Clicked on Chapter Management successfully","pass");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			reportStep("Clicked on Chapter Management is not successful","fail");
+			e.printStackTrace();
+		}
 		}
 	
 	@And("click on the home page")
